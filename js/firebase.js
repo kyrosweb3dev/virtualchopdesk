@@ -1,12 +1,13 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyC9tpr1MQOwjz-uqVO9pfT1BeDzftucmjE",
-  authDomain: "ravearabs.firebaseapp.com",
-  databaseURL: "https://ravearabs-default-rtdb.firebaseio.com",
-  projectId: "ravearabs",
-  storageBucket: "ravearabs.firebasestorage.app",
-  messagingSenderId: "1047046818039",
-  appId: "1:1047046818039:web:658d42d85f644f344cebf2"
+  apiKey: "AIzaSyAvd0QZjofQ8iCL_OLeM5jUClYMSbkXo8Q",
+  authDomain: "aidedarabfame.firebaseapp.com",
+  databaseURL: "https://aidedarabfame-default-rtdb.firebaseio.com",
+  projectId: "aidedarabfame",
+  storageBucket: "aidedarabfame.firebasestorage.app",
+  messagingSenderId: "182333344020",
+  appId: "1:182333344020:web:6efb5f91a9341ba6ee5a01",
+  measurementId: "G-E3BLBTXW43"
 };
 firebase.initializeApp(firebaseConfig);
 
